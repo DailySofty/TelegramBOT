@@ -9,7 +9,7 @@ import json
 path = Path.dirname(__file__)
 # Token
 token = json.load(open(f'{path}\\..\\ignore\\token.json'))['token']
-
+# Request GetMe
 
 # -- Funções
 def clearConsole() -> None: # Limpa o console
