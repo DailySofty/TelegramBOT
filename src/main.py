@@ -5,10 +5,8 @@ import os.path as Path
 import json
 
 # -- Variáveis
-# Caminho do diretório
-path = Path.dirname(__file__)
-# Token
-token = json.load(open(f'{path}\\..\\ignore\\token.json'))['token']
+path = Path.dirname(__file__) # Caminho do diretório
+token = json.load(open(f'{path}\\..\\ignore\\token.json'))['token'] # Token
 # Request GetMe
 
 # -- Funções
@@ -17,7 +15,7 @@ def clearConsole() -> None: # Limpa o console
 
 def main() -> None:
     global token
-    print(token)
+    
     # --------------------------------------------------------------------------------------------------------------
     # 1 - Logar
     
