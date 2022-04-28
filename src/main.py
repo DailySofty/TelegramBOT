@@ -30,7 +30,7 @@ class Bot:
                         print(f"| Enviando mensagem #{list(messages).index(message) + 1}...")
                         update_id = message["update_id"]
                         chat_id = message["message"]["from"]["id"]
-                        is_first_message = (message['message']['message_id'] == 1)
+                        is_first_message = (message["message"]["message_id"] == 1)
                         reply = self.createReply(message, is_first_message)
                         self.sendMessage(reply, chat_id)
                         print(f"| Mensagem #{list(messages).index(message) + 1} enviada!\n|")
@@ -49,7 +49,7 @@ class Bot:
         return json.loads(result.content)
     
     def createReply(self, message, is_first_message) -> str: #? Retornar resposta
-        message = message['message']['text']
+        message = message["message"]["text"]
         if (is_first_message == True) or (message.lower() == "menu"):
             return f"""Primeira mensagem.{os.linesep}Escolha um número:{os.linesep}1 - Piada{os.linesep}2 - Link{os.linesep}3 - Qualquer número de 0 à 100"""
         
