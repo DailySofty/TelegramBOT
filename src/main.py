@@ -9,7 +9,7 @@ import random #! Remover futuramente
 #* -- Variáveis
 path = os.path.dirname(__file__) #? Caminho do diretório
 api_url = "https://api.telegram.org/bot" #? URL da API do Telegram
-token = json.load(open(f"{path}\\..\\ignore\\token.json"))["token"] #? Token do BOT
+token = json.load(open(f"{path}\\token.json"))["token"] #? Token do BOT
 
 #* -- Classes
 class Bot:
