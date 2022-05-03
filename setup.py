@@ -1,3 +1,4 @@
+# pip freeze > requirements.txt
 #* -- Importações
 import os
 
