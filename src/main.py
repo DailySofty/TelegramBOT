@@ -23,7 +23,7 @@ class Bot:
         while True:
             print("Buscando mensagens...\n")
             update = self.getUpdates(update_id)
-            if messages := update["result"]:
+            if messages := update["result"]: #? Se 'update["result"]' for verdadeiro (True), então 'messages' recebe 'update["result"]'
                 print(f"/ Mensagens encontradas: {len(messages)}\n|")
                 for message in messages:
                     if "message" in message:
