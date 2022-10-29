@@ -1,14 +1,17 @@
-# [NomeDoBOT vVERSAO](https://t.me/TCCdummy_bot)
----
-
 ![stars][stars] ![watchers][watchers] ![forks][forks]
 <br>
-![ptbr](https://img.shields.io/badge/languages-PTBR-darkgreen.svg "Português brasileiro") ![eng](https://img.shields.io/badge/ENG-darkblue.svg "English")
+
+# [WhatsAppBOT](https://t.me/TCCdummy_bot)
+A manager for WhatsApp groups.
+---
+
+[![ptbr](https://img.shields.io/badge/languages-PTBR-darkgreen.svg)](https://github.com/DailySofty/WhatsAappBOT/ "Português brasileiro") [![eng](https://img.shields.io/badge/ENG-blue.svg)](https://github.com/DailySofty/WhatsAappBOT/ "English")
 
 <!-- https://img.shields.io/badge/<SUBJECT>-<STATUS>-<COLOR>.svg -->
 ---
 <details>
-    <summary>PTBR</summary>
+    <summary>:green_circle: PTBR</summary>
+    <br>
 
 _Descrição do projeto_
         <details>
@@ -50,7 +53,8 @@ TEXTO COMO USAR
 </details>
 
 <details>
-<summary>ENG</summary>
+    <summary>:large_blue_circle: ENG</summary>
+    <br>
 
 _Project Description_
     <details>
@@ -89,9 +93,9 @@ Simply run the file `main.py` and follow the instructions!
 HOW TO USE TEXT
 </details>
 
-[forks]: https://img.shields.io/github/forks/DailySofty/TCC
-[stars]: https://img.shields.io/github/stars/DailySofty/TelegramBot
-[watchers]: https://img.shields.io/github/watchers/DailySofty/TelegramBot
-[issues]: https://badgen.net/github/issues/DailySofty/TelegramBot
-[pull_requests]: https://badgen.net/github/prs/DailySofty/TelegramBot
-[branches]: https://badgen.net/github/branches/DailySofty/TelegramBot
+[forks]: https://img.shields.io/github/forks/DailySofty/TelegramBOT
+[stars]: https://img.shields.io/github/stars/DailySofty/TelegramBOT
+[watchers]: https://img.shields.io/github/watchers/DailySofty/TelegramBOT
+[issues]: https://badgen.net/github/issues/DailySofty/TelegramBOT
+[pull_requests]: https://badgen.net/github/prs/DailySofty/TelegramBOT
+[branches]: https://badgen.net/github/branches/DailySofty/TelegramBOT
