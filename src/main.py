@@ -6,7 +6,7 @@ import telebot
 
 # * -- Variáveis
 path = os.path.dirname(__file__)  # ? Caminho do diretório
-token = json.load(open(f"{path}\\..\\token.json"))["token"]  # ? Token do BOT
+token = json.load(open(f"{path}\\token.json"))["token"]  # ? Token do BOT
 BOT = telebot.TeleBot(token)
 
 # * -- Funções
