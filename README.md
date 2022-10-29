@@ -1,7 +1,7 @@
 ![stars][stars] ![watchers][watchers] ![forks][forks]
 <br>
 
-# [TelegramBOT](https://t.me/TCCdummy_bot)
+# [TelegramBOT](http://t.me/DailySoftyBOT)
 A manager for WhatsApp groups.
 ---
 
