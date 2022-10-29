@@ -14,11 +14,12 @@ BOT = telebot.TeleBot(token)
 def main() -> None:  # ? Função principal
     signal.signal(signal.SIGINT, confirmExit)
     
-    print("Iniciando o BOT...")
+    print("\nIniciando o BOT...")
     BOT.polling()
 
 def confirmExit(signum, frame):
     if input("\nDeseja realmente desligar o BOT? (s/n)\n>>> ") == 's':
+        print("\nBOT desligado.")
         exit(1)
 
 def clearConsole() -> None:  # ? Limpa o console
