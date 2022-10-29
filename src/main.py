@@ -12,16 +12,6 @@ token = json.load(open(f"{path}\\token.json"))["token"] #? Token do BOT
 BOT = telebot.TeleBot(token)
 
 #* -- Funções
-def main() -> None: #? Função principal
-    signal.signal(signal.SIGINT, confirmExit)
-    
-    print(f"\n[{TITLE}] Iniciando o BOT...")
-    
-    BOT.set_update_listener(detectChanges)
-    print(f"[{TITLE}] BOT iniciado.\n")
-    # BOT.polling()
-    BOT.infinity_polling()
-
 def confirmExit(signum, frame):
     if input(f"\n[{TITLE}] Deseja realmente desligar o BOT? (s/n) ") == 's':
         print(f"[{TITLE}] BOT desligado.")
@@ -46,5 +36,15 @@ def spam(message) -> None:
     BOT.reply_to(message, "spam")
 
 #! Main
+def main() -> None: #? Função principal
+    signal.signal(signal.SIGINT, confirmExit)
+    
+    print(f"\n[{TITLE}] Iniciando o BOT...")
+    
+    BOT.set_update_listener(detectChanges)
+    print(f"[{TITLE}] BOT iniciado.\n")
+    # BOT.polling()
+    BOT.infinity_polling()
+
 if __name__ == "__main__":
     main()
