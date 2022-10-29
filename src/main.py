@@ -3,6 +3,7 @@
 import os
 import json
 import telebot
+import signal
 
 # * -- Variáveis
 path = os.path.dirname(__file__)  # ? Caminho do diretório
@@ -11,7 +12,14 @@ BOT = telebot.TeleBot(token)
 
 # * -- Funções
 def main() -> None:  # ? Função principal
+    signal.signal(signal.SIGINT, confirmExit)
+    
+    print("Iniciando o BOT...")
     BOT.polling()
+
+def confirmExit(signum, frame):
+    if input("\nDeseja realmente desligar o BOT? (s/n)\n>>> ") == 's':
+        exit(1)
 
 def clearConsole() -> None:  # ? Limpa o console
     os.system("cls" if os.name == "nt" else "clear")
