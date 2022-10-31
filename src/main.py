@@ -38,6 +38,8 @@ def spam(message) -> None:
 #! Main
 def main() -> None: #? Função principal
     signal.signal(signal.SIGINT, confirmExit)
+    signal.signal(signal.SIGQUIT, confirmExit)
+    signal.signal(signal.SIGTERM, confirmExit)
     
     print(f"\n[{TITLE}] Iniciando o BOT...")
     
