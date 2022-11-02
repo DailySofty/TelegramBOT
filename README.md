@@ -2,7 +2,7 @@
 <br>
 
 # [TelegramBOT](http://t.me/DailySoftyBOT)
-A manager for WhatsApp groups.
+A manager for Telegram groups.
 ---
 
 [![ptbr](https://img.shields.io/badge/languages-PTBR-darkgreen.svg)](https://github.com/DailySofty/WhatsAappBOT/ "Português brasileiro") [![eng](https://img.shields.io/badge/ENG-blue.svg)](https://github.com/DailySofty/WhatsAappBOT/ "English")
