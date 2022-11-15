@@ -1,15 +1,17 @@
 # pip freeze > requirements.txt
 #* -- Importações
-import os
 import json
-import telebot
+import os
 import signal
+import telebot
 
 #* -- Variáveis
 TITLE = "TelegramBOT"
 path = os.path.dirname(__file__) #? Caminho do diretório
 token = json.load(open(f"{path}\\token.json"))["token"] #? Token do BOT
 BOT = telebot.TeleBot(token)
+with open("dados.txt", "r") as arquivo:
+    filmes = arquivo.read()
 
 #* -- Funções
 def confirmExit(signum, frame):
@@ -28,6 +30,7 @@ def detectChanges(messages):
 def ping(message) -> None:
     print(f"\n[{TITLE}#ping] message: {message.text}")
     BOT.reply_to(message, "pong")
+    print(filmes)
 
 #? Responde sempre que receber uma mensagem
 @BOT.message_handler(func=lambda message: True)
