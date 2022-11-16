@@ -98,15 +98,15 @@ def getData(mode) -> None:
     
     print(f"[{TITLE}#getData] DATA: {DATA}")
 
-def convertImg(url) -> str:
-    print(f"[{TITLE}#convertImg] url: {url}")
+# def convertImg(url) -> str:
+#     print(f"[{TITLE}#convertImg] url: {url}")
     
-    imgRes = requests.get(url).content
-    print(f"[{TITLE}#convertImg] imgRes: {imgRes}")
+#     imgRes = requests.get(url).content
+#     print(f"[{TITLE}#convertImg] imgRes: {imgRes}")
     
-    img64 = base64.b64encode(imgRes)
-    print(f"[{TITLE}#convertImg] img64: {img64}")
-    return img64
+#     img64 = base64.b64encode(imgRes)
+#     print(f"[{TITLE}#convertImg] img64: {img64}")
+#     return img64
 
 def detectChanges(messages) -> None:
     print(f"[{TITLE}#detectChanges] detected: {messages}")
@@ -116,7 +116,7 @@ def detectChanges(messages) -> None:
 def ping(message) -> None:
     print(f"\n[{TITLE}#ping] message: {message.text}")
     BOT.reply_to(message, "pong")
-    print(DATA)
+    # print(DATA)
 
 #? Comando /filmes
 @BOT.message_handler(commands=["filmes"])
