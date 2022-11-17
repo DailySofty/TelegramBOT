@@ -6,7 +6,6 @@ import signal
 import telebot
 from bs4 import BeautifulSoup
 import requests
-import json
 import base64
 
 #* -- Variáveis
