@@ -61,7 +61,6 @@ def getData(mode) -> None:
 
             for filme in filmes:
                 titulo = filme.find('td', {'class': 'titleColumn'}).a.text
-                
                 ano = filme.find('span', {'class': 'secondaryInfo'}).text.replace("(", "").replace(")", "")
                 nota = filme.find('td', {'class': 'imdbRating'}).text.replace("\n", "")
                 imagem = filme.find('td', {'class': 'posterColumn'}).img.src
@@ -83,7 +82,6 @@ def getData(mode) -> None:
 
             for filme in filmes:
                 titulo = filme.find('td', {'class': 'titleColumn'}).a.text
-                
                 ano = filme.find('span', {'class': 'secondaryInfo'}).text.replace("(", "").replace(")", "")
                 nota = filme.find('td', {'class': 'imdbRating'}).text.replace("\n", "")
                 imagem = filme.find('td', {'class': 'posterColumn'}).img.src
