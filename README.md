@@ -2,7 +2,7 @@
 <br>
 
 # [TelegramBOT](http://t.me/DailySoftyBOT)
-A manager for Telegram groups.
+TODO
 ---
 
 [![ptbr](https://img.shields.io/badge/languages-PTBR-darkgreen.svg)](https://github.com/DailySofty/WhatsAappBOT/ "Português brasileiro") [![eng](https://img.shields.io/badge/ENG-blue.svg)](https://github.com/DailySofty/WhatsAappBOT/ "English")
@@ -22,8 +22,6 @@ _Descrição do projeto_
 1. [Como Instalar](#como-instalar)
 
 1. [Como Executar](#como-executar)
-
-1. [Como Usar](#como-usar)
         </details>
 
 ---
@@ -53,11 +51,6 @@ _Uma prompt deve aparecer e instalar todas as dependências._
 Simplesmente execute o arquivo `main.py` e siga as instruções!
 
 ---
-### Como Usar
-
-TEXTO COMO USAR
-
----
 </details>
 
 <details>
@@ -73,8 +66,6 @@ _Project Description_
 1. [How to Install](#how-to-install)
 
 1. [How to Run](#how-to-run)
-
-1. [How to Use](#how-to-use)
     </details>
 
 ---
@@ -104,9 +95,6 @@ _A prompt should appear and install all dependencies._
 Simply run the file `main.py` and follow the instructions!
 
 ---
-### How to Use
-
-HOW TO USE TEXT
 </details>
 
 [forks]: https://img.shields.io/github/forks/DailySofty/TelegramBOT
